@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: PRODUCT-SERVICE
+  data:
+    mongodb:
+      uri: mongodb+srv://easytobuy:easytobuy@cluster0.xnzeq.mongodb.net/easy-to-buy?retryWrites=true&w=majority&ssl=true
+      database: easy-to-buy
+  config:
+    import: configserver:http://localhost:9296
+
+server:
+  port: 9095
